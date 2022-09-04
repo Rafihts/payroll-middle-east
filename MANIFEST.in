@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include payroll_middle_east *.css
+recursive-include payroll_middle_east *.csv
+recursive-include payroll_middle_east *.html
+recursive-include payroll_middle_east *.ico
+recursive-include payroll_middle_east *.js
+recursive-include payroll_middle_east *.json
+recursive-include payroll_middle_east *.md
+recursive-include payroll_middle_east *.png
+recursive-include payroll_middle_east *.py
+recursive-include payroll_middle_east *.svg
+recursive-include payroll_middle_east *.txt
+recursive-exclude payroll_middle_east *.pyc
