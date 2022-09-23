@@ -20,14 +20,13 @@ from frappe.custom.doctype.custom_field.custom_field import create_custom_fields
 #     pass
 
 
-
 def make_employee_custom_fields():
     """Create Custom fields	
     - Employee name in Arabic
     """
     custom_fields = {
 
-        "Employee": [
+        'Employee': [
             dict(
                 fieldname="employee_name_in_arabic",
                 label="Name in Arabic",
