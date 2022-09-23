@@ -1,5 +1,6 @@
 from payroll_middle_east.customisation.salary import make_employee_custom_fields
 import frappe
+from frappe.custom.doctype.custom_field.custom_field import create_custom_field
 
 
 def execute():
@@ -23,4 +24,15 @@ def execute():
     #     logger.info('Employees not found,returning')
     #     return
     # logger.info('Making custom field for employee DocType')
-    make_employee_custom_fields()
+    # make_employee_custom_fields()
+
+
+    create_custom_field('Employee', {
+        'fieldname': 'ewaybill',
+        'label': 'E-Way Bill No.',
+        'fieldtype': 'Data',        
+        'allow_on_submit': 1,
+        'insert_after': 'first_name',
+        'translatable': 0,
+        'owner': 'Administrator'
+    })
